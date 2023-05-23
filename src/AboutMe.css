@@ -1,0 +1,15 @@
+.AboutMe {
+    align-content: center;
+}
+
+.AboutMe-images{
+    align-items: center;
+
+}
+
+.AboutMe-image1 {
+    height: 20vmin;
+}
+.AboutMe-text{
+    text-align: center;
+}

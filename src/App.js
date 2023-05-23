@@ -1,9 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import './NavBar.css';
 
 function App() {
   return (
     <div className="App">
+      <ul>
+        <li><a href="./AboutMe.js">About Me</a></li>
+        <li><a href="AboutMe.js">Projects</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -15,7 +21,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Hello Zeeya
         </a>
       </header>
     </div>
