@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import './NavBar.css';
+import './components/NavBar.css';
+
 
 function App() {
   return (
     <div className="App">
       <ul>
+        <li><a href="./AboutMe.js">Home</a></li>
         <li><a href="./AboutMe.js">About Me</a></li>
         <li><a href="AboutMe.js">Projects</a></li>
         <li><a href="Contact">Contact</a></li>
@@ -25,6 +27,7 @@ function App() {
         </a>
       </header>
     </div>
+    
   );
 }
 
