@@ -1,9 +1,14 @@
-import treePic from './assets/treePic.jpg';
+// import treePic from "./assets/treePic.jpg";
 function Home(){
     return(
         <div>
-            <img style={{ width: "100%", objectFit: "fit" }} src={treePic} alt = "green pine trees by Andrew Coelho on Unsplash"/>
+            Hello Zeeya
         </div>
-    )
+            // <img alt = "green pine trees by Andrew Coelho on Unsplash" 
+            //     style={{ width: "100%", height: "70vh", objectFit: "cover", objectPosition: "center top" }} 
+            //     src={treePic}> 
+            // </img>
+
+    );
 }
 export default Home;

@@ -1,15 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar.jsx';
-// import Home from './pages/Home.jsx';
 import './components/NavBar.css';
-
+import NavBar from './components/NavBar.jsx';
+import Home from './pages/Home.jsx';
+import AboutMe from './pages/AboutMe.jsx';
+// import Projects from './pages/Projects.jsx';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/AboutMe" element={<AboutMe />} />
+        </Routes>
+      </BrowserRouter>
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
