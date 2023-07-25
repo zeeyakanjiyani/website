@@ -1,11 +1,11 @@
 
 import React from "react";
 import {Nav, Container, NavDropdown, Navbar} from 'react-bootstrap';
-import "../components/NavBar.css";
+import "../components/custom.css";
 
 function GlobalNavBar(){
     return(
-        <Navbar sticky="top" >
+        <Navbar sticky="top" style={{backgroundColor:"#001E1A"}}>
             <Container>
                 <Nav>
                     <Nav.Link style={{color:"white"}} href="/">Home</Nav.Link>

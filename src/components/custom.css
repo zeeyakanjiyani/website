@@ -1,5 +1,5 @@
 .text-title-color{
-    color:white;
+    color:white !important;
     
 }
 
@@ -12,7 +12,7 @@
     background-color: #001E1A !important;
     --bs-dropdown-link-color: white !important;
     --bs-dropdown-link-hover-color: white !important;
-    --bs-dropdown-link-hover-bg: none !important;
+    --bs-dropdown-link-hover-bg: #121212 !important;
     --bs-dropdown-min-width: 5rem !important;
 }
 
@@ -21,6 +21,8 @@
     margin-right:14px !important;
     margin-left:14px !important;
 }
+
+
 /* 
 ul{
     overflow: hidden;
