@@ -1,6 +1,6 @@
 
 import React from "react";
-import {Nav, Container, NavDropdown, Navbar} from 'react-bootstrap';
+import {Nav, Container, NavDropdown, Navbar, Dropdown} from 'react-bootstrap';
 import "../components/custom.css";
 
 function GlobalNavBar(){
@@ -12,8 +12,12 @@ function GlobalNavBar(){
                     <NavDropdown title={<span className="text-title-color align-content-center">About</span>} id="basic-nav-dropdown">
                         <NavDropdown.Item href="/Personal">Personal</NavDropdown.Item>
                         <NavDropdown.Item href="/Professional">Professional</NavDropdown.Item>
-                        <NavDropdown.Divider/>
-                        <NavDropdown.Item href="/Contact">Contact</NavDropdown.Item>
+                        <NavDropdown.Divider style={{backgroundColor:"white"}}/>
+                        <NavDropdown key="end" drop="end" title={<span className="text-title-color align-content-center">Contact</span>}>
+                            <Dropdown.Item href="https://www.linkedin.com/in/zeeyakanjiyani/" target="_blank">LinkedIn</Dropdown.Item>
+                            <Dropdown.Item href="https://github.com/zeeyakanjiyani" target="_blank">GitHub</Dropdown.Item>
+                            <Dropdown.Item >E-mail</Dropdown.Item>
+                        </NavDropdown>
                     </NavDropdown>
                     <Nav.Link style={{color:"white"}} href="/Projects">Projects</Nav.Link>
                 </Nav>
