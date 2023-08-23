@@ -1,9 +1,9 @@
 import selfImage from "../assets/self-image.jpg";
 import {Button, Container, Row, Col, Image, Card} from "react-bootstrap";
-import {Link} from 'react-router-dom';
 import treePic from "../assets/treePic.jpg";
-import MWETlogo from "../assets/MWET-logo.jpg";
+import MWETlogo from "../assets/MWET_Logo.jpg";
 import floodfill from "../assets/floodfill.gif";
+import resume from "../assets/resume.pdf";
 import "../components/custom.css";
 
 function Professional(){
@@ -27,7 +27,9 @@ function Professional(){
                                 I am currently in my 3rd year pursuing a B.S. in Chemical Engineering and a minor in Computer Science.
                                 <br></br>
                                 <br></br>
-                                <Button>Resume</Button>
+                                <a href={resume} target="_blank">
+                                    <Button>Resume</Button>
+                                </a>
                             </body>
                         </Container>
                         
@@ -76,29 +78,29 @@ function Professional(){
                             <Card.Body style={{color:"lightgrey"}}>
                                 <Card.Title>Personal Website</Card.Title>
                                 <Card.Text>
-                                    This website was my Summer 2023 project. Below, you will find the GitHub link for its repository.
+                                    This website was my Summer 2023 project. I used React.js for development and AWS for cloud hosting. Below, you will find the GitHub link for its repository.
                                 </Card.Text>
-                                <Button href='https://github.com/zeeyakanjiyani/website' target='_blank' >GitHub repo</Button>
+                                <Button href='https://github.com/zeeyakanjiyani/website' target='_blank' rel="noreferrer">GitHub repo</Button>
                             </Card.Body>
                         </Card>
                     </Col>
                     <Col>
                         <Card style={{width:"18rem", backgroundColor:"#001E1A"}}>
-                            <a href="https://mwet.utexas.edu/" target='_blank'>
+                            <a href="https://mwet.utexas.edu/" target='_blank' rel="noreferrer">
                                 <Card.Img variant="top" src={MWETlogo}></Card.Img>
                             </a>
                             <Card.Body style={{color:"lightgrey"}}>
-                                <Card.Title><Link to="https://mwet.utexas.edu/" target="_blank" style={{color:"lightgrey"}}>MWET</Link> Polymer Research</Card.Title>
+                                <Card.Title>MWET Polymer Research</Card.Title>
                                 <Card.Text>
                                     The goal of this research was to increase the charge content of double-network hydrogels for ion filtration. I learned how to 
-                                    synthesize polymers and various testing methods.
+                                    synthesize polymers and perform various testing methods.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
                     <Col>
                         <Card style={{width:"18rem", backgroundColor:"#001E1A"}}>
-                            <a href="https://vidhu-verma.medium.com/everything-about-flood-fill-algorithm-graphs-28c133e516cf" target='_blank'>
+                            <a href="https://vidhu-verma.medium.com/everything-about-flood-fill-algorithm-graphs-28c133e516cf" target='_blank' rel="noreferrer">
                                 <Card.Img variant="top" src={floodfill}></Card.Img>
                             </a>
                             <Card.Body style={{color:"lightgrey"}}>
@@ -108,7 +110,7 @@ function Professional(){
                                     Flood fill is an algorithm that visits all nodes in the array that are connected to the start node by a path of the 
                                     target color and changes them to the replacement color. This GitHub repo contains the implementation for my flood fill algorithm.
                                 </Card.Text>
-                                <Button href='https://github.com/zeeyakanjiyani/FloodFill' target='_blank' >GitHub repo</Button>
+                                <Button href='https://github.com/zeeyakanjiyani/FloodFill' target='_blank' rel="noreferrer">GitHub repo</Button>
                             </Card.Body>
                         </Card>
                     </Col>
